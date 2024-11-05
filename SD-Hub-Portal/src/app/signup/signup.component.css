@@ -1,7 +1,7 @@
 .main{
     font-family: 'Times New Roman', Times, serif;
     border: 1px solid #DC143C;
-    height: 450px;
+    height: fit-content;
     max-width: 350px;
     margin: auto;
     margin-top: 150px;

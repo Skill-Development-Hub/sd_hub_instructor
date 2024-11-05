@@ -1,5 +1,5 @@
 {
-  "name": "sd-hub-portal",
+  "name": "sdhub-portal",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,6 +20,9 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"

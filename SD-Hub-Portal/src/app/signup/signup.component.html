@@ -1,0 +1,43 @@
+
+<div class="main">
+    <div class="login-head">
+        <div class="img">
+            <img src="./logo.png" alt="logo"  >
+        </div>
+        <div class="logo-name">
+            <h1>Student SignUp</h1>
+            <p>Skill Development Hub</p>
+        </div>
+    </div>
+    <div class="login-main">
+            <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Student ID</mat-label>
+                    <input matInput formControlName="studentID" type="text" required>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name" type="text" required>
+                </mat-form-field>
+        
+                <mat-form-field appearance="fill">
+                    <mat-label>Age</mat-label>
+                    <input matInput formControlName="age" type="number" required>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email" type="email" required>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Contact Number</mat-label>
+                    <input matInput formControlName="number" type="number" required>
+                </mat-form-field>
+        
+                <button mat-raised-button color="primary" type="submit">Sign Up</button>
+            </form>
+    </div>
+</div>

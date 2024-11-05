@@ -11,12 +11,15 @@ import { MatInput, MatInputModule } from '@angular/material/input';
 import { MatButton, MatButtonModule } from '@angular/material/button';
 import { MatCalendar } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
+import { SignupComponent } from './signup/signup.component';
+import { provideHttpClient  } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
